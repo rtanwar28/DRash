@@ -6,6 +6,7 @@ public class Script1 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 	
+		// One line added
 	}
 	
 	// Update is called once per frame
