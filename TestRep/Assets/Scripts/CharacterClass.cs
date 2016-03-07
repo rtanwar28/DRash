@@ -6,19 +6,23 @@ public class CharacterClass : MonoBehaviour {
 	int health;
 	bool isDead;
 
-	public CharacterClass()
+	// Default settings
+	/*public CharacterClass(int attackDamageCount,int healthStart)
 	{
-		health = 10;
+		attackDamage = attackDamageCount;
+		health = healthStart;
 		isDead = false;
+	}*/
+
+	//Damage function
+	public void GetDamaged(int damageCount)
+	{
+		health -= damageCount;
 	}
 
-	// Use this for initialization
-	void Start () {
-	
+	//Death Function
+	public void Death()
+	{
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
+}	
