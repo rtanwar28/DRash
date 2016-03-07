@@ -9,7 +9,7 @@ public class ShotClass : MonoBehaviour {
 	void FixedUpdate()
 	{
         // Push the object forward
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2(0, -shotSpeed*Time.deltaTime*100));
+		GetComponent<Rigidbody2D> ().AddForce (new Vector2(0, -shotSpeed*Time.deltaTime*400));
         //Debug.Log ("Fire");
 
         // Destroys this game object if it is not seen in the screeen

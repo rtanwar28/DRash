@@ -34,7 +34,8 @@ public class GenericEnemy : CharacterClass {
         // Moves the enemy
         if (movement == null)
         {
-            movement = new LinearMovement();
+			movement = new FollowMovement();
+			Debug.Log ("wave");
         }
 		movement.Move (gameObject);
 	}

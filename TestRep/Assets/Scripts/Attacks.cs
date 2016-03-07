@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Attacks : MonoBehaviour {
 
-	public float attackSpeed = 1;
+	public float attackSpeed = 0.5f;
 	float projectileSpeed = 15;
 	int attackCount;
 
@@ -18,7 +18,7 @@ public class Attacks : MonoBehaviour {
 		if (attackSpeed <= 0) 
 		{
 			Fire (shotPrefab, projectileSpeed, attackCount);
-			attackSpeed = 1;
+			attackSpeed = 0.5f;
 		}
 	}
 
