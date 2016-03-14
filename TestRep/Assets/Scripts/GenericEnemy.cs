@@ -9,7 +9,7 @@ public class GenericEnemy : CharacterClass {
 
     public bool isAbleToDestroy;
     public IEnemyMovement movement;
-
+    public int shotDamage;
 	public void movementSetter(IEnemyMovement movementInput)
 	{
         movement = movementInput;

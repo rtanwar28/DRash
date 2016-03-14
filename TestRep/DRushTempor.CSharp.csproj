@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -71,10 +65,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Attacks.cs" />
     <Compile Include="Assets\Scripts\CharacterClass.cs" />
+    <Compile Include="Assets\Scripts\FireballController.cs" />
     <Compile Include="Assets\Scripts\GenericEnemy.cs" />
+    <Compile Include="Assets\Scripts\IEMovement\FollowMovement.cs" />
     <Compile Include="Assets\Scripts\IEMovement\LinearMovement.cs" />
+    <Compile Include="Assets\Scripts\IEMovement\UpDownMovement.cs" />
+    <Compile Include="Assets\Scripts\IEMovement\WaveMovement.cs" />
     <Compile Include="Assets\Scripts\IEnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
     <Compile Include="Assets\Scripts\ShotClass.cs" />
+    <Compile Include="Assets\Scripts\SpawnerScripts\FollowEnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\SpawnerScripts\LineEnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\SpawnerScripts\RandomEnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\SpawnerScripts\UDEnemySpawner.cs" />
+    <Compile Include="Assets\Scripts\SpawnerScripts\WaveEnemySpawner.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

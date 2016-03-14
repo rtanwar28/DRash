@@ -20,10 +20,10 @@ public class PlayerMovement : MonoBehaviour {
 	{
 		Vector2 temp = transform.position;
 		//Clamping the player to the x-axis
-		temp.x = Mathf.Clamp (transform.position.x, -4.5f, 4.5f);
+		temp.x = Mathf.Clamp (transform.position.x, -12, 12);
 
 		//Clamping the player to the y-axis
-		temp.y = Mathf.Clamp (transform.position.y, -3.3f, 1.0f);
+		temp.y = Mathf.Clamp (transform.position.y, -8, 8);
 
 		// Setting the player position to the clamped values along the x and the y axis.
 		transform.position = temp;
@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour {
 		//Instantiating player fireballs
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
-			Instantiate(fireball,firePoint.position,firePoint.rotation);
+			Instantiate(fireball,firePoint.position, firePoint.rotation);
 		}
 
 	}

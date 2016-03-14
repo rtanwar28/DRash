@@ -3,11 +3,12 @@ using System.Collections;
 
 public class FireballController : MonoBehaviour {
 
-	public float fireSpeed; // speed for the fireball
+	public float fireSpeed;
 	Rigidbody2D rb2D;
-
-	// Use this for initialization
-	void Start () {
+    public bool isAbleToDestroy;
+    float timeToTrue = 5;
+    // Use this for initialization
+    void Start () {
 	
 		//Rigidbody 2D component for player fireball
 		rb2D = GetComponent<Rigidbody2D> ();
@@ -16,8 +17,17 @@ public class FireballController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//rb2D.velocity = new Vector2 (fireSpeed, rb2D.velocity.x);
-		rb2D.AddForce (Vector2.up * fireSpeed);
+        // Destroys the gameobject if it is not seen anymore
+        timeToTrue -= Time.deltaTime;
+        if (timeToTrue < 0)
+            isAbleToDestroy = true;
+        if (isAbleToDestroy == true && gameObject.GetComponent<SpriteRenderer>().isVisible == false)
+        {
+            Destroy(gameObject);
+        }
+
+        //rb2D.velocity = new Vector2 (fireSpeed, rb2D.velocity.x);
+        rb2D.AddForce (Vector2.up * fireSpeed);
 	}
 
 	void OnTriggerEnter2D (Collider2D other)
