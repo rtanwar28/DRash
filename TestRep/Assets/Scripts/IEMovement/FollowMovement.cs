@@ -9,7 +9,7 @@ public class FollowMovement : IEnemyMovement
 	public void Move(GameObject go)
 	{
 		// Sets the speed and finds the player
-		float speed = 10;
+		float speed = 1;
 		player = GameObject.FindGameObjectWithTag ("Player");
 
 		// Sets the players position
@@ -18,7 +18,7 @@ public class FollowMovement : IEnemyMovement
 		Vector3 enemyPosition = go.transform.position;
 
         // Checks wether the object is near the player and moves the player
-        if (Vector3.Distance (enemyPosition, playerPosition) < 3f) 
+        if (Vector3.Distance (enemyPosition, playerPosition) > 3f) 
 		{
 			Vector3 direction = playerPosition - enemyPosition;
 
@@ -29,7 +29,7 @@ public class FollowMovement : IEnemyMovement
 		else // In case the object is not near
 		{
 			// Moves the object forward
-			go.transform.position += new Vector3(0, -0.1f * Time.deltaTime);
+			go.transform.position += new Vector3(0, -0.01f * Time.deltaTime);
 		}
 	}
 }

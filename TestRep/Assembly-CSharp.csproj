@@ -45,23 +45,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Attacks.cs" />
+     <Compile Include="Assets\Scripts\AddScore.cs" />
+     <Compile Include="Assets\Scripts\ButtonBehaviour.cs" />
      <Compile Include="Assets\Scripts\CharacterClass.cs" />
-     <Compile Include="Assets\Scripts\FireballController.cs" />
-     <Compile Include="Assets\Scripts\GenericEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Attacks.cs" />
+     <Compile Include="Assets\Scripts\Enemy\GenericEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ShotClass.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\IEMovement\FollowMovement.cs" />
+     <Compile Include="Assets\Scripts\IEMovement\IEnemyMovement.cs" />
      <Compile Include="Assets\Scripts\IEMovement\LinearMovement.cs" />
+     <Compile Include="Assets\Scripts\IEMovement\SideMovement.cs" />
      <Compile Include="Assets\Scripts\IEMovement\UpDownMovement.cs" />
      <Compile Include="Assets\Scripts\IEMovement\WaveMovement.cs" />
-     <Compile Include="Assets\Scripts\IEnemyMovement.cs" />
-     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerInfoPT.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\FireballController.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\HealthBarScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInfo.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
-     <Compile Include="Assets\Scripts\ShotClass.cs" />
      <Compile Include="Assets\Scripts\SpawnerScripts\FollowEnemySpawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerScripts\LineEnemySpawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerScripts\RandomEnemySpawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerScripts\UDEnemySpawner.cs" />
      <Compile Include="Assets\Scripts\SpawnerScripts\WaveEnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\TrackScore.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

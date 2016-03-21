@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RandomEnemySpawner : MonoBehaviour {
+public class RandomEnemySpawner : MonoBehaviour 
+{
 	public GameObject enemyPrefab;
 	public IEnemyMovement testMovement;
-	float timeTilSpawn;
+
 	public int moveSpawnLimitter;
 	public float timer;
 	public int damage;
-    int randomNumber;
+	public int enemyHealthSpawn;
 
+    int randomNumber;
+	float timeTilSpawn;
     GameObject enemyC;
+
 	// Use this for initialization
 	void Start () {
 		timeTilSpawn = timer;
@@ -43,36 +47,51 @@ public class RandomEnemySpawner : MonoBehaviour {
 		case 1:
 			enemyC = Instantiate (enemyPrefab, randomPosition, Quaternion.identity)as GameObject;
 			enemyC.GetComponent<GenericEnemy> ().movementSetter (new LinearMovement ());
-            //Debug.Log("Line");
 			enemyC.GetComponent<GenericEnemy> ().shotDamage = damage;
+			enemyC.GetComponent<GenericEnemy> ().enemyHealth = enemyHealthSpawn;
+			enemyC.GetComponent<GenericEnemy> ().maxEnemyHealth = enemyHealthSpawn;
 			timeTilSpawn = timer + Random.Range (0, 6);
 			break;
 
 		case 2:
 			enemyC = Instantiate (enemyPrefab, randomPosition, Quaternion.identity)as GameObject;
 			enemyC.GetComponent<GenericEnemy> ().movementSetter (new UpDownMovement());
-            //Debug.Log("UD");
 			enemyC.GetComponent<GenericEnemy> ().shotDamage = damage;
+			enemyC.GetComponent<GenericEnemy> ().enemyHealth = enemyHealthSpawn;
+			enemyC.GetComponent<GenericEnemy> ().maxEnemyHealth = enemyHealthSpawn;
 			timeTilSpawn = timer + Random.Range(0,6);
 			break;
 
 		case 3:
 			enemyC = Instantiate (enemyPrefab, randomPosition, Quaternion.identity)as GameObject;
 			enemyC.GetComponent<GenericEnemy> ().movementSetter (new FollowMovement());
-            //Debug.Log("Follow");
 			enemyC.GetComponent<GenericEnemy> ().shotDamage = damage;
+			enemyC.GetComponent<GenericEnemy> ().enemyHealth = enemyHealthSpawn;
+			enemyC.GetComponent<GenericEnemy> ().maxEnemyHealth = enemyHealthSpawn;
 			timeTilSpawn = timer + Random.Range(0,6);
 			break;
 
 		case 4:
 			enemyC = Instantiate (enemyPrefab, randomPosition, Quaternion.identity)as GameObject;
-			enemyC.GetComponent<GenericEnemy> ().movementSetter (new WaveMovement ());
-            //Debug.Log("Wave");
+			enemyC.GetComponent<GenericEnemy> ().movementSetter (new SideMovement());
 			enemyC.GetComponent<GenericEnemy> ().shotDamage = damage;
+			enemyC.GetComponent<GenericEnemy> ().enemyHealth = enemyHealthSpawn;
+			enemyC.GetComponent<GenericEnemy> ().maxEnemyHealth = enemyHealthSpawn;
+			timeTilSpawn = timer + Random.Range(0,6);
+			break;
+
+		case 5:
+			enemyC = Instantiate (enemyPrefab, randomPosition, Quaternion.identity)as GameObject;
+			enemyC.GetComponent<GenericEnemy> ().movementSetter (new WaveMovement ());
+			enemyC.GetComponent<GenericEnemy> ().shotDamage = damage;
+			enemyC.GetComponent<GenericEnemy> ().enemyHealth = enemyHealthSpawn;
+			enemyC.GetComponent<GenericEnemy> ().maxEnemyHealth = enemyHealthSpawn;
 			timeTilSpawn = timer + Random.Range (0, 6);
 			break;
 		}
 
 		randomNumber = 0;
 	}
+
+
 }
