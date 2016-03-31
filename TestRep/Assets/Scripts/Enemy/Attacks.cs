@@ -8,7 +8,9 @@ public class Attacks : MonoBehaviour {
 	int attackCount;
 
 	public GameObject shotPrefab;
-	
+
+	public AudioSource audio_fire;
+
 	// Update is called once per frame
 	void Update () 
 	{
@@ -28,5 +30,7 @@ public class Attacks : MonoBehaviour {
 		GameObject shotClone = Instantiate (shot, transform.position, Quaternion.identity) as GameObject;
 		shotClone.GetComponent<ShotClass> ().shotDamage = attackDamage;
 		shotClone.GetComponent<ShotClass> ().shotSpeed = speed;
+
+		audio_fire.Play();
 	}
 }

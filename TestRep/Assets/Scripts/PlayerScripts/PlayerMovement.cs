@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public GameObject fireball;
 	public Transform firePoint;
+	public AudioSource playerFire;
 	
 	// Use this for initialization
 	void Start () {
@@ -88,6 +89,7 @@ public class PlayerMovement : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
 			Instantiate(fireball,firePoint.position, firePoint.rotation);
+			playerFire.Play();
 		}
 
 	}

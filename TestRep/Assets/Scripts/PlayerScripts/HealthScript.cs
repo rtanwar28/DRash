@@ -9,11 +9,13 @@ public class HealthScript : MonoBehaviour
 	public int health;
 	public SpriteRenderer renderer;
 	public Color collideColor, normalColor;
+	public AudioSource audio_death;
 
 	// Use this for initialization
 	void Start () 
 	{
 		isDead = false;
+		audio_death.Play();
 		renderer = GetComponent<SpriteRenderer> ();
 		maxHealth = health;
 	}

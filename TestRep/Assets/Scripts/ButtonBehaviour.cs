@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using UnityEditor;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class ButtonBehaviour : MonoBehaviour {
 	
@@ -41,15 +43,21 @@ public class ButtonBehaviour : MonoBehaviour {
 	//load the level when start is clicked
 	public void StartButtonClick()
 	{
-		Application.LoadLevel("HowToPlay");
+		SceneManager.LoadScene("HowToPlay");
+		//Application.LoadLevel("HowToPlay");
 	}
 	
 
+
+	//LOAD THE GAME FROM THE SCENE "HowToPlay"
 	public void PlayGame()
 	{
-		Application.LoadLevel("Scene1");
+		SceneManager.LoadScene("Scene1");
+		//Application.LoadLevel("Scene1");
 	}
-	
+
+
+
 	//FOR HIGHSCORE BUTTON
 	
 	public void HighScoreButtonEnter() 
@@ -61,7 +69,11 @@ public class ButtonBehaviour : MonoBehaviour {
 	{
 		highscoreFire.enabled = false;
 	}
-	
+
+	public void HighScoreButtonClick()
+	{
+		SceneManager.LoadScene("");
+	}
 	
 	
 	//FOR SETTINGS BUTTON
@@ -74,6 +86,11 @@ public class ButtonBehaviour : MonoBehaviour {
 	public void SettingsButtonExit()
 	{
 		settingsFire.enabled = false;
+	}
+
+	public void SettingsButtonClick()
+	{
+		SceneManager.LoadScene("Settings");
 	}
 	
 	
@@ -88,6 +105,11 @@ public class ButtonBehaviour : MonoBehaviour {
 	public void CreditsButtonExit()
 	{
 		creditsFire.enabled = false;
+	}
+
+	public void CreditssButtonClick()
+	{
+		SceneManager.LoadScene("Credits");
 	}
 	
 	
@@ -106,6 +128,22 @@ public class ButtonBehaviour : MonoBehaviour {
 	
 	public void QuitButtonClick()
 	{
-		Application.LoadLevel("Quit");
+		//end game in the Unity Editor
+		#if UNITY_EDITOR 
+		EditorApplication.isPlaying = false;
+
+		//end game in the built application
+		#else 
+		Application.Quit();
+		#endif
+
+	}
+
+
+	//GOING BACK TO MAIN MENU
+	public void BackToMenu()
+	{
+		SceneManager.LoadScene("MainMenu");
+		//Application.LoadLevel("MainMenu");
 	}
 }
