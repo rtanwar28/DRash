@@ -5,11 +5,11 @@ public class ShotClass : MonoBehaviour {
 
 	public int shotDamage;
 	public float shotSpeed;
-
+    public float adjuster;
 	void FixedUpdate()
 	{
         // Push the object forward
-		GetComponent<Rigidbody2D> ().AddForce (new Vector2(0, -shotSpeed*Time.deltaTime*500));
+		GetComponent<Rigidbody2D> ().AddForce (new Vector2(adjuster, -shotSpeed * 40));
         //Debug.Log ("Fire");
 
         // Destroys this game object if it is not seen in the screeen
@@ -19,7 +19,7 @@ public class ShotClass : MonoBehaviour {
         }
 
         // Destroys the gameobject with a timer
-		float timeCheck = 10;
+		float timeCheck = 3;
 		timeCheck -= Time.deltaTime;
 
 		if (timeCheck <= 0) 

@@ -5,11 +5,16 @@ public class Attacks : MonoBehaviour {
 
 	public float attackSpeed = 1f;
 	public float projectileSpeed;
-	int attackCount;
+    public AudioClip fireSound;
+    public GameObject shotPrefab;
 
-	public GameObject shotPrefab;
+    AudioSource aSource;
+    int attackCount;
 
-	public AudioSource audio_fire;
+    void Start()
+    {
+        aSource = GetComponent<AudioSource>();
+    }
 
 	// Update is called once per frame
 	void Update () 
@@ -20,6 +25,7 @@ public class Attacks : MonoBehaviour {
 		if (attackSpeed <= 0) 
 		{
 			Fire (shotPrefab, projectileSpeed, attackCount);
+            aSource.PlayOneShot(fireSound);
 			attackSpeed = 1f;
 		}
 	}
@@ -30,7 +36,5 @@ public class Attacks : MonoBehaviour {
 		GameObject shotClone = Instantiate (shot, transform.position, Quaternion.identity) as GameObject;
 		shotClone.GetComponent<ShotClass> ().shotDamage = attackDamage;
 		shotClone.GetComponent<ShotClass> ().shotSpeed = speed;
-
-		audio_fire.Play();
 	}
 }

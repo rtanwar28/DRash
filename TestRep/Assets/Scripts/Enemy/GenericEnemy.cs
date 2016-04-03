@@ -9,15 +9,20 @@ public class GenericEnemy : CharacterClass {
 
     GameObject enemyAttack;
 	SpriteRenderer renderer;
+	GameObject player;
+    AudioSource aSource;
 
 	public Color normalColor;
 	public Color collideColor;
 	public Image content;
+    public AudioClip getHit, dieSound;
+	public int scoreValue;
 	public int enemyHealth;
 	public int maxEnemyHealth;
     public bool isAbleToDestroy;
     public IEnemyMovement movement;
     public int shotDamage;
+
 	public void movementSetter(IEnemyMovement movementInput)
 	{
         movement = movementInput;
@@ -25,6 +30,8 @@ public class GenericEnemy : CharacterClass {
 
 	void Start()
 	{
+		player = GameObject.FindGameObjectWithTag ("Player");
+        aSource = GetComponent<AudioSource>();
 		renderer = GetComponent<SpriteRenderer> ();
 	}
 
@@ -39,11 +46,14 @@ public class GenericEnemy : CharacterClass {
         if (isAbleToDestroy == true && gameObject.GetComponent<SpriteRenderer>().isVisible == false)
         {
             Destroy(gameObject);
+
         }
 		HandleHealth ();
 
 		if (enemyHealth <= 0) 
 		{
+			player.GetComponent<ScoreManager> ().AddScore (scoreValue);
+            aSource.PlayOneShot(dieSound);
 			Destroy (gameObject);
 		}
     }
@@ -77,6 +87,7 @@ public class GenericEnemy : CharacterClass {
 		{
 			enemyHealth -= 1;
 			renderer.material.color = collideColor;
+            aSource.PlayOneShot(getHit);
 			Invoke("ReturnColor", 0.3f);
 		}
 	}
@@ -87,7 +98,8 @@ public class GenericEnemy : CharacterClass {
 			enemyHealth -= 1;
 			Destroy (obj.gameObject);
 			renderer.material.color = collideColor;
-			Invoke("ReturnColor", 0.3f);
+            aSource.PlayOneShot(getHit);
+            Invoke("ReturnColor", 0.3f);
 		}
 	}
 

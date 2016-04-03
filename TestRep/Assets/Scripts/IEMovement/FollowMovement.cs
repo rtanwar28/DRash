@@ -29,7 +29,7 @@ public class FollowMovement : IEnemyMovement
 		else // In case the object is not near
 		{
 			// Moves the object forward
-			go.transform.position += new Vector3(0, -0.01f * Time.deltaTime);
+			go.transform.Translate(new Vector3(0, -0.01f * Time.deltaTime));
 		}
 	}
 }

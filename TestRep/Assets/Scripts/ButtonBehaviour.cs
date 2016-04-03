@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class ButtonBehaviour : MonoBehaviour {
 	
@@ -17,12 +18,15 @@ public class ButtonBehaviour : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		//starts as not active...as the game starts, fireSprite wont be visible
-		startFire.enabled = false; 
-		settingsFire.enabled = false;
-		highscoreFire.enabled = false; 
-		creditsFire.enabled = false; 
-		quitFire.enabled = false;
+        //starts as not active...as the game starts, fireSprite wont be visible
+        if (startFire != null)
+        {
+            startFire.enabled = false;
+            settingsFire.enabled = false;
+            highscoreFire.enabled = false;
+            creditsFire.enabled = false;
+            quitFire.enabled = false;
+        }
 		
 	}
 	
@@ -43,24 +47,28 @@ public class ButtonBehaviour : MonoBehaviour {
 	//load the level when start is clicked
 	public void StartButtonClick()
 	{
-		SceneManager.LoadScene("HowToPlay");
-		//Application.LoadLevel("HowToPlay");
+		Application.LoadLevel("HowToPlay");
 	}
 	
 
-
-	//LOAD THE GAME FROM THE SCENE "HowToPlay"
 	public void PlayGame()
 	{
-		SceneManager.LoadScene("Scene1");
-		//Application.LoadLevel("Scene1");
+		Application.LoadLevel("Scene1");
 	}
 
+    public void LoadSettings()
+    {
+        Application.LoadLevel("Settings");
+    }
 
+    public void LoadHighScores()
+    {
+        Application.LoadLevel("HighScores");
+    }
 
-	//FOR HIGHSCORE BUTTON
-	
-	public void HighScoreButtonEnter() 
+    //FOR HIGHSCORE BUTTON
+
+    public void HighScoreButtonEnter() 
 	{
 		highscoreFire.enabled = true;
 	}
@@ -69,11 +77,7 @@ public class ButtonBehaviour : MonoBehaviour {
 	{
 		highscoreFire.enabled = false;
 	}
-
-	public void HighScoreButtonClick()
-	{
-		SceneManager.LoadScene("");
-	}
+	
 	
 	
 	//FOR SETTINGS BUTTON
@@ -86,11 +90,6 @@ public class ButtonBehaviour : MonoBehaviour {
 	public void SettingsButtonExit()
 	{
 		settingsFire.enabled = false;
-	}
-
-	public void SettingsButtonClick()
-	{
-		SceneManager.LoadScene("Settings");
 	}
 	
 	
@@ -105,11 +104,6 @@ public class ButtonBehaviour : MonoBehaviour {
 	public void CreditsButtonExit()
 	{
 		creditsFire.enabled = false;
-	}
-
-	public void CreditssButtonClick()
-	{
-		SceneManager.LoadScene("Credits");
 	}
 	
 	
@@ -128,22 +122,20 @@ public class ButtonBehaviour : MonoBehaviour {
 	
 	public void QuitButtonClick()
 	{
-		//end game in the Unity Editor
-		#if UNITY_EDITOR 
-		EditorApplication.isPlaying = false;
-
-		//end game in the built application
-		#else 
-		Application.Quit();
-		#endif
-
+		Application.LoadLevel("Quit");
 	}
 
+    public void LoadBackMenu()
+    {
+        Application.LoadLevel("MainMenu");
+    }
 
-	//GOING BACK TO MAIN MENU
-	public void BackToMenu()
-	{
-		SceneManager.LoadScene("MainMenu");
-		//Application.LoadLevel("MainMenu");
-	}
+    public void QuitGame()
+    {
+        #if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+        #else
+        Application.Quit();
+        #endif
+    }
 }

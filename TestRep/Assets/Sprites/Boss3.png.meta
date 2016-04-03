@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: e3d07a7b79592334b8523ee1b07dea06
+timeCreated: 1459185213
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boss3_0
+    21300002: Boss3_1
+    21300004: Boss3_2
+    21300006: Boss3_3
+    21300008: Boss3_4
+    21300010: Boss3_5
+    21300012: Boss3_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1000
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Boss3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 2763
+        height: 1461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15.5, y: -110.58226}
+        - {x: 18.5, y: -111.58226}
+        - {x: 40.5, y: -135.58226}
+        - {x: 110.5, y: -24.58226}
+        - {x: 208.5, y: -10.58226}
+        - {x: 237.5, y: 62.41774}
+        - {x: 308.5, y: 70.41774}
+        - {x: 308.5, y: 78.41774}
+        - {x: 184.5, y: 164.41774}
+        - {x: 166.5, y: 164.41774}
+        - {x: 54.5, y: 96.41774}
+        - {x: -7.5, y: 120.41774}
+        - {x: -45.5, y: 85.41774}
+        - {x: -163.5, y: 164.41774}
+        - {x: -179.5, y: 164.41774}
+        - {x: -308.5, y: 80.41774}
+        - {x: -308.5, y: 73.41774}
+        - {x: -231.5, y: 52.41774}
+        - {x: -201.5, y: -12.58226}
+        - {x: -110.5, y: -5.58226}
+        - {x: -78.5, y: -114.58226}
+        - {x: -61.5, y: -162.58226}
+        - {x: -18.5, y: -162.58226}
+        - {x: 10.5, y: -111.58226}
+        - {x: 5.5, y: -91.58226}
+        - {x: 2.5, y: -83.58226}
+    - name: Boss3_1
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 1667
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Boss3_2
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 766
+        width: 3465
+        height: 1228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 23.520569, y: -88.55342}
+        - {x: 39.52057, y: -91.55342}
+        - {x: 61.52057, y: -28.553421}
+        - {x: 67.52057, y: 15.446579}
+        - {x: 65.52057, y: 36.44658}
+        - {x: 212.52057, y: -5.553421}
+        - {x: 222.52057, y: -3.553421}
+        - {x: 387.52057, y: 20.446579}
+        - {x: 387.52057, y: 31.446579}
+        - {x: 298.52057, y: 92.44658}
+        - {x: 237.52057, y: 120.44658}
+        - {x: 98.52057, y: 136.44658}
+        - {x: 89.52057, y: 138.44658}
+        - {x: -124.47943, y: 138.44658}
+        - {x: -238.47943, y: 122.44658}
+        - {x: -301.47943, y: 88.44658}
+        - {x: -386.47943, y: 28.446579}
+        - {x: -386.47943, y: -4.553421}
+        - {x: -146.47943, y: -7.553421}
+        - {x: -41.47943, y: -87.55342}
+        - {x: -25.479431, y: -84.55342}
+        - {x: -22.479431, y: -132.55342}
+        - {x: -20.479431, y: -136.55342}
+        - {x: -13.479431, y: -136.55342}
+        - {x: 15.520569, y: -88.55342}
+        - {x: 11.520569, y: -60.55342}
+        - {x: 12.520569, y: -67.55342}
+    - name: Boss3_3
+      rect:
+        serializedVersion: 2
+        x: 6739
+        y: 896
+        width: 2431
+        height: 1219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.0719, y: -84.54161}
+        - {x: -27.0719, y: -135.54161}
+        - {x: -20.0719, y: -135.54161}
+        - {x: 5.9281006, y: -98.54161}
+        - {x: 8.928101, y: -85.54161}
+        - {x: 4.9281006, y: -34.54161}
+        - {x: 15.928101, y: -29.54161}
+        - {x: 6.9281006, y: -49.54161}
+        - {x: 6.9281006, y: -57.54161}
+        - {x: 8.928101, y: -68.54161}
+        - {x: 15.928101, y: -86.54161}
+        - {x: 31.9281, y: -86.54161}
+        - {x: 35.9281, y: -79.54161}
+        - {x: 90.9281, y: 22.45839}
+        - {x: 177.9281, y: -135.54161}
+        - {x: 216.9281, y: -135.54161}
+        - {x: 272.9281, y: -101.54161}
+        - {x: 272.9281, y: 50.45839}
+        - {x: 191.9281, y: 119.45839}
+        - {x: 89.9281, y: 137.45839}
+        - {x: -67.0719, y: 137.45839}
+        - {x: -88.0719, y: 129.45839}
+        - {x: -231.0719, y: 94.45839}
+        - {x: -271.0719, y: 34.45839}
+        - {x: -271.0719, y: -62.54161}
+        - {x: -263.0719, y: -97.54161}
+        - {x: -216.0719, y: -135.54161}
+        - {x: -181.0719, y: -135.54161}
+        - {x: -123.0719, y: -25.54161}
+        - {x: -73.0719, y: 41.45839}
+        - {x: -66.0719, y: -76.54161}
+        - {x: -44.0719, y: -83.54161}
+    - name: Boss3_4
+      rect:
+        serializedVersion: 2
+        x: 4513
+        y: 4
+        width: 273
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.843506, y: 63.39267}
+        - {x: -30.843506, y: -44.60733}
+        - {x: -15.843506, y: -61.60733}
+        - {x: 16.156494, y: -61.60733}
+        - {x: 31.156494, y: -32.60733}
+        - {x: 31.156494, y: 63.39267}
+    - name: Boss3_5
+      rect:
+        serializedVersion: 2
+        x: 5024
+        y: 4
+        width: 273
+        height: 547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.804688, y: 62.39267}
+        - {x: -30.804688, y: -36.60733}
+        - {x: -7.8046875, y: -60.60733}
+        - {x: 9.1953125, y: -60.60733}
+        - {x: 22.195312, y: -55.60733}
+        - {x: 31.195312, y: -15.60733}
+        - {x: 31.195312, y: 41.39267}
+        - {x: 25.195312, y: 62.39267}
+    - name: Boss3_6
+      rect:
+        serializedVersion: 2
+        x: 5561
+        y: 0
+        width: 273
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -30.463623, y: 61.5}
+        - {x: -30.463623, y: -32.5}
+        - {x: -9.463623, y: -61.5}
+        - {x: 8.536377, y: -61.5}
+        - {x: 21.536377, y: -54.5}
+        - {x: 30.536377, y: -28.5}
+        - {x: 30.536377, y: 61.5}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

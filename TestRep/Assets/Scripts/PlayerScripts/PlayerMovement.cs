@@ -4,12 +4,12 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour {
 
 	public float speed; // Setting the player speed
-	
+    public float fireSpeedAdjuster;
+    public int fireIndex = 0;
 	Animator animator;
 
-	public GameObject fireball;
+	public GameObject[] fireball;
 	public Transform firePoint;
-	public AudioSource playerFire;
 	
 	// Use this for initialization
 	void Start () {
@@ -88,8 +88,9 @@ public class PlayerMovement : MonoBehaviour {
 		//Instantiating player fireballs
 		if (Input.GetKeyDown (KeyCode.Space))
 		{
-			Instantiate(fireball,firePoint.position, firePoint.rotation);
-			playerFire.Play();
+			GameObject fireClone = (GameObject)Instantiate(fireball[fireIndex],firePoint.position, firePoint.rotation);
+            fireClone.GetComponent<PlayerFireController>().speed = fireSpeedAdjuster;
+
 		}
 
 	}

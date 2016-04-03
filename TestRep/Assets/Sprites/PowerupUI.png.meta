@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 669738a29b5744ad9a954a069e9c2b38
-timeCreated: 1457957212
+timeCreated: 1459167115
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -98,7 +98,7 @@ TextureImporter:
         width: 11
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_1
@@ -109,7 +109,7 @@ TextureImporter:
         width: 17
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_2
@@ -120,7 +120,7 @@ TextureImporter:
         width: 48
         height: 165
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_3
@@ -131,7 +131,7 @@ TextureImporter:
         width: 50
         height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_4
@@ -142,7 +142,7 @@ TextureImporter:
         width: 16
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_5
@@ -153,7 +153,7 @@ TextureImporter:
         width: 12
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: _heart1
@@ -569,7 +569,7 @@ TextureImporter:
         width: 41
         height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: _fire2
@@ -675,7 +675,7 @@ TextureImporter:
         width: 41
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_14
@@ -686,7 +686,7 @@ TextureImporter:
         width: 54
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: PowerupUI_15
@@ -697,7 +697,7 @@ TextureImporter:
         width: 55
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
     - name: _bomb1
@@ -1007,43 +1007,43 @@ TextureImporter:
         y: 108
         width: 784
         height: 783
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 159.15247, y: -171.70786}
-        - {x: 177.15247, y: -162.70786}
-        - {x: 180.15247, y: -159.70786}
-        - {x: 180.15247, y: 159.29214}
-        - {x: 179.15247, y: 161.29214}
-        - {x: 169.15247, y: 166.29214}
-        - {x: 167.15247, y: 168.29214}
-        - {x: 160.15247, y: 171.29214}
-        - {x: 158.15247, y: 173.29214}
-        - {x: 153.15247, y: 175.29214}
-        - {x: 151.15247, y: 177.29214}
-        - {x: 146.15247, y: 179.29214}
-        - {x: -141.84753, y: 179.29214}
-        - {x: -146.84753, y: 177.29214}
-        - {x: -151.84753, y: 174.29214}
-        - {x: -153.84753, y: 172.29214}
-        - {x: -162.84753, y: 168.29214}
-        - {x: -166.84753, y: 164.29214}
-        - {x: -168.84753, y: 164.29214}
-        - {x: -171.84753, y: 162.29214}
-        - {x: -177.84753, y: 159.29214}
-        - {x: -178.84753, y: 157.29214}
-        - {x: -178.84753, y: -158.70786}
-        - {x: -166.84753, y: -164.70786}
-        - {x: -161.84753, y: -168.70786}
-        - {x: -154.84753, y: -171.70786}
-        - {x: -152.84753, y: -173.70786}
-        - {x: -145.84753, y: -176.70786}
-        - {x: -142.84753, y: -178.70786}
-        - {x: 147.15247, y: -178.70786}
-        - {x: 150.15247, y: -177.70786}
-        - {x: 152.15247, y: -175.70786}
-        - {x: 157.15247, y: -173.70786}
+      - - {x: 159.15247, y: -350.39185}
+        - {x: 177.15247, y: -341.39185}
+        - {x: 180.15247, y: -338.39185}
+        - {x: 180.15247, y: -19.391846}
+        - {x: 179.15247, y: -17.391846}
+        - {x: 169.15247, y: -12.391846}
+        - {x: 167.15247, y: -10.391846}
+        - {x: 160.15247, y: -7.3918457}
+        - {x: 158.15247, y: -5.3918457}
+        - {x: 153.15247, y: -3.3918457}
+        - {x: 151.15247, y: -1.3918457}
+        - {x: 146.15247, y: 0.6081543}
+        - {x: -141.84753, y: 0.6081543}
+        - {x: -146.84753, y: -1.3918457}
+        - {x: -151.84753, y: -4.3918457}
+        - {x: -153.84753, y: -6.3918457}
+        - {x: -162.84753, y: -10.391846}
+        - {x: -166.84753, y: -14.391846}
+        - {x: -168.84753, y: -14.391846}
+        - {x: -171.84753, y: -16.391846}
+        - {x: -177.84753, y: -19.391846}
+        - {x: -178.84753, y: -21.391846}
+        - {x: -178.84753, y: -337.39185}
+        - {x: -166.84753, y: -343.39185}
+        - {x: -161.84753, y: -347.39185}
+        - {x: -154.84753, y: -350.39185}
+        - {x: -152.84753, y: -352.39185}
+        - {x: -145.84753, y: -355.39185}
+        - {x: -142.84753, y: -357.39185}
+        - {x: 147.15247, y: -357.39185}
+        - {x: 150.15247, y: -356.39185}
+        - {x: 152.15247, y: -354.39185}
+        - {x: 157.15247, y: -352.39185}
     - name: PowerupUI_25
       rect:
         serializedVersion: 2
@@ -1052,7 +1052,7 @@ TextureImporter:
         width: 686
         height: 696
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 147.45605, y: -148.84384}

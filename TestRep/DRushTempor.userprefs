@@ -1,22 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerScripts/HealthScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerScripts/HealthScript.cs" Line="22" Column="16" />
-      <File FileName="Assets/Scripts/SpawnerScripts/RandomEnemySpawner.cs" Line="44" Column="54" />
-      <File FileName="Assets/Scripts/IEMovement/LinearMovement.cs" Line="9" Column="54" />
-      <File FileName="Assets/Scripts/IEMovement/WaveMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/IEMovement/FollowMovement.cs" Line="1" Column="1" />
-      <File FileName="../../GAM111/GAM111.1_JohnMarkAdriano_DUB11408/GAM111_1 Grifheim/Assets/Script/HUD.cs" Line="1" Column="1" />
-      <File FileName="../../GAM111/GAM111.1_JohnMarkAdriano_DUB11408/GAM111_1 Grifheim/Assets/Script/Player/PlayerInfo.cs" Line="1" Column="1" />
-      <File FileName="../../GAM111/GAM111.1_JohnMarkAdriano_DUB11408/GAM111_1 Grifheim/Assets/Script/Player/PlayerController.cs" Line="1" Column="1" />
-      <File FileName="../../GAM111/GAM111.1_JohnMarkAdriano_DUB11408/GAM111_1 Grifheim/Assets/Script/Score.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/IEMovement/UpDownMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/IEMovement/SideMovement.cs" Line="9" Column="63" />
-      <File FileName="Assets/Scripts/PlayerScripts/HealthBarScript.cs" Line="30" Column="3" />
-      <File FileName="Assets/Scripts/Enemy/ShotClass.cs" Line="18" Column="19" />
-      <File FileName="Assets/Scripts/ButtonBehaviour.cs" Line="19" Column="21" />
-      <File FileName="Assets/Scripts/PlayerScripts/PlayerMovement.cs" Line="44" Column="36" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/GenericEnemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/CheatScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerScripts/HealthScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Enemy/ShotClass.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerScripts/ScoreManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
